@@ -23,3 +23,13 @@ for i in range(N+5):
 
 print(x)
 print(y)
+
+# 강사님 풀이
+n = int(input())
+for i in range(n):
+    print('#', end='')
+
+print()
+
+for i in range(n+5):
+    print('!', end = '')

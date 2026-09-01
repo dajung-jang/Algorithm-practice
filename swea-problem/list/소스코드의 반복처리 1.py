@@ -10,3 +10,7 @@ for i in range(9):
     result += a
 
 print(result)
+
+# 강사님 풀이
+for i in range(9):
+    print('#', end='')

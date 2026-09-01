@@ -25,3 +25,14 @@ else:
         result += "#"
 
 print(result)
+
+# 강사님 풀이
+N = int(input())
+
+if n > 10:
+    for i in range(5):
+        print('#', end='')
+
+else:
+    for i in range(N):
+        print('#', end='')

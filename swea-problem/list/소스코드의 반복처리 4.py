@@ -11,7 +11,7 @@
 # a가 b이하 : a~b출력(증가)
 # a가 b초과 : a~b출력(감소)
 
-a, b = map(int,input().split())
+a, b = map(int, input().split())
 numbers = ""
 
 if a <= b:
@@ -25,4 +25,15 @@ else:
 result = " ".join(numbers)
 print(result)
 
+# 강사님 풀이
+# map 함수 쓰는 이유 : 입력받은 문자열을 정수로 바꾸려고
+# split() 쓰는 이유 : 공백 기준으로 입력 받으려고
+x, y = map(int, input().split())
 
+if x <= y:
+    for i in range(x, y+1):
+        print(i, end=' ')
+else:
+    # y-1 을 포함하지 않으면 y까지
+    for j in range(x, y - 1, -1):
+        print(j, end=' ')
