@@ -39,3 +39,17 @@ for j in arr:
 print(result_max - result_min)
 
 # 강사님 풀이
+arr = [2, 5, 1, 6, 4, 3]
+
+sum_v = 0
+max_v = float('-inf')   # 문제 조건에 없으면 음의 무한대 초기화
+min_v = float('inf')    # 문제 조건에 없으면 양의 무한대 초기화
+
+for i in arr:
+    if i > max_v: max_v = i # 최대값 갱신 코드
+    if i < min_v: min_v = i # 최소값 갱신 코드
+    sum_v_v += i # 합계 누적
+
+print(sum_v)
+print(max_v - min_v)
+
