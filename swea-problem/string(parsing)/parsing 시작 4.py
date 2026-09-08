@@ -12,14 +12,23 @@ text = 'ABCDEFABCKKKKKABC'
 i = 0
 cnt = 0
 while i < len(text):
-    if text.find('ABC', i) != -1:
+    idx = text.find('ABC', i)
+    if idx == -1: break
+    elif i == idx :
         cnt += 1
-    else: break
-    i += 1
-
+        i += 3
+    else: i += 1
 
 print(cnt)
 # ============= 강사님 풀이 ===============
 
+a = b = cnt = 0
 
+while True:
+    b = text.find('ABC', a) # a 위치 인덱스를 b에 저장
+    # 못찾으면 -1
+    if b == -1: break
+    cnt += 1
+    a = b + 1
 
+print(cnt)

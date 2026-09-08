@@ -20,7 +20,17 @@ n2 = text[x2+1:y2]
 result = int(n1) + int(n2)
 
 print(result)
+
 # ============= 강사님 풀이 ===============
 
+idx1 = text.find('[')
+idx2 = text.find(']', idx1 + 1)
+idx3 = text.find('[', idx2 + 1)
+idx4 = text.find(']', idx3 + 1)
+
+num1 = text[idx1+1:idx2]
+num2 = text[idx3+1:idx4]
+
+print(int(num1) + int(num2))
 
 
